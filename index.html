@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خانه - پژمان</title>
+    <link rel="stylesheet" href="images/swiper-bundle.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header class="container">
+    <h1 style="padding: 5px">پژمان</h1>
+    <nav class="tab-bar">
+        <ul class="tab-bar__tabs">
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="index.html" aria-current="page">خانه</a></li>
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="achievements.html">دستاوردها</a></li>
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="history.html">سوابق</a></li>
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="contact.html">ارتباط با من</a></li>
+            <div class="button-container">
+                <button id="theme-toggle" aria-pressed="false">تغییر تم</button>
+            </div>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1>به صفحه خوش آمدید</h1>
+            <p>این یک نمونه متن برای صفحه اصلی وب سایت پژمان است.</p>
+        </div>
+    </section>
+    <!-- Swiper -->
+    <section class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/slide1.jpg" alt="عکس اول" />
+                <div class="caption">عکس اول</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slide2.jpg" alt="عکس دوم" />
+                <div class="caption">عکس دوم</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slide3.jpg" alt="عکس سوم" />
+                <div class="caption">عکس سوم</div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+</main>
+<footer>
+    <div class="container text-center">
+        <p>&copy; 2024 پژمان. تمامی حقوق محفوظ است.</p>
+    </div>
+</footer>
+
+<script src="images/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 1500,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 1, // نمایش یک تصویر در هر بار
+        spaceBetween: 10, // فاصله بین تصاویر
+        centeredSlides: true, // نمایش تصویر فعال در مرکز
+    });
+
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+
+    function setTheme(theme) {
+        document.body.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        themeToggle.setAttribute('aria-pressed', theme === 'dark');
+    }
+
+    themeToggle.addEventListener('click', function() {
+        const currentTheme = document.body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+    });
+
+    // Set theme on load
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+</script>
+</body>
+</html>

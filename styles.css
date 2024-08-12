@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* سفید */
+    color: #333333; /* خاکستری تیره */
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header {
+    background-color: #000000; /* سیاه */
+    color: #fdee30; /* زرد */
+    padding: 15px 0;
+    text-align: center; /* Center text and SVG */
+    transition: background-color 0.5s ease;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .tab-bar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+header .tab-bar__tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header .tab-bar__tab {
+    margin: 0 10px;
+}
+
+header .tab-bar__tab-link {
+    text-decoration: none;
+    color: #ffffff; /* سفید */
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #fdee30; /* حاشیه زرد */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .tab-bar__tab-link:hover {
+    text-decoration: underline;
+    background-color: #fdee30; /* زرد */
+    color: #000000; /* سیاه */
+}
+
+#theme-toggle {
+    margin-right: 10px; /* Adjust margin to fit design */
+    background-color: #000000; /* سیاه */
+    color: #fdee30; /* زرد */
+    border: 2px solid #fdee30; /* حاشیه زرد */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle[aria-pressed="true"] {
+    background-color: #fdee30; /* زرد */
+    color: #000000; /* سیاه */
+}
+
+main {
+    padding: 20px;
+}
+
+main .container {
+    width: 80%;
+    margin: 0 auto; /* Center container */
+    padding: 30px;
+    color: #333333; /* خاکستری تیره */
+    background-color: #ffffff; /* سفید */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #fdee30; /* زرد */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.contact-svg {
+    vertical-align: middle;
+    margin: 0 10px;
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333333; /* خاکستری تیره */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+form textarea {
+    resize: none; /* Disable resize */
+    height: 150px; /* Set a fixed height */
+}
+
+form button {
+    padding: 10px;
+    font-size: 1em;
+    color: #ffffff; /* سفید */
+    background-color: #000000; /* سیاه */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+}
+
+form button:hover {
+    background-color: #fdee30; /* زرد */
+    color: #000000; /* سیاه */
+}
+
+form .reset-button {
+    background-color: #6c757d;
+}
+
+form .reset-button:hover {
+    background-color: #5a6268;
+}
+
+header button {
+    padding: 4px;
+    font-size: 0.95em;
+    color: #ffffff; /* سفید */
+    background-color: #000000; /* سیاه */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+}
+
+header button:hover {
+    background-color: #fdee30; /* زرد */
+    color: #000000; /* سیاه */
+}
+
+footer {
+    background-color: #000000; /* سیاه */
+    color: #fdee30; /* زرد */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+/* New styles for button container */
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.button-container button {
+    flex: 0 0 auto;
+    margin-right: 0; /* Remove the right margin set earlier */
+}
+
+/* Dark Theme Styles */
+body[data-theme='dark'] {
+    background-color: #333333; /* خاکستری تیره */
+    color: #f4f4f4; /* سفید */
+}
+
+body[data-theme='dark'] header {
+    background-color: #000000; /* سیاه */
+}
+
+body[data-theme='dark'] main .container {
+    background-color: #444444; /* خاکستری تیره */
+    color: #f4f4f4; /* سفید */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme='dark'] section h2 {
+    color: #fdee30; /* زرد */
+}
+
+body[data-theme='dark'] form input,
+body[data-theme='dark'] form textarea {
+    background-color: #444444; /* خاکستری تیره */
+    border-color: #555555; /* خاکستری تیره تر */
+    color: #f4f4f4; /* سفید */
+}
+
+body[data-theme='dark'] form button {
+    background-color: #fdee30; /* زرد */
+    color: #000000; /* سیاه */
+}
+
+body[data-theme='dark'] form button:hover {
+    background-color: #ffffff; /* سفید */
+    color: #000000; /* سیاه */
+}
+
+body[data-theme='dark'] form .reset-button {
+    background-color: #5a6268;
+}
+
+body[data-theme='dark'] form .reset-button:hover {
+    background-color: #3e4348;
+}
