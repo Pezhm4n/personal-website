@@ -1,4 +1,33 @@
+@font-face {
+    font-family: 'Omid Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Omid/Omid.woff2') format('woff2') ;
+}
+
+@font-face {
+    font-family: 'Omid-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Omid/Omid-Bold.woff2') format('woff2') ;
+}
+
+@font-face {
+    font-family: 'Omid-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Omid/Omid-Light.woff2') format('woff2') ;
+}
+
+
 /* General Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
@@ -230,3 +259,4 @@ body[data-theme='dark'] form .reset-button {
 body[data-theme='dark'] form .reset-button:hover {
     background-color: #3e4348;
 }
+
