@@ -1,0 +1,451 @@
+/* Media Queries */
+
+/* Desktop (Large screens) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+
+    .bottom-title-text {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .bottom-title-text {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .history {
+        font-size: 14px;
+        padding: 2px 14px;
+    }
+
+    .main-btn {
+        margin-top: 2rem;
+    }
+
+    .top-box-title-text::after {
+        height: 990px;
+        margin: 79rem auto 5rem auto;
+    }
+
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    .main-img {
+        position: absolute;
+        width: 52%;
+        top: 10px;
+        right: 0;
+        max-width: 70%;
+        z-index: 0;
+    }
+
+    .img-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0 0 0;
+        z-index: 1;
+    }
+
+    .img-text > p {
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .history {
+        z-index: 5;
+        font-size: 12px;
+        right: 0;
+        top: 0;
+        padding: 1px 10px;
+    }
+
+    .main-btn {
+        margin-top: 15rem;
+    }
+
+    .navigation a {
+        font-size: 1em;
+        margin-left: 20px;
+    }
+
+    .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .box{
+        font-size: 0.9rem;
+        line-height: 5px;
+    }
+
+    .box-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .top-box-title-text::after {
+        height: 900px;
+        margin: 72rem auto 5rem auto;
+    }
+
+    .bottom-title-text {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    header {
+        padding: 10px 0 20px;
+    }
+
+    .history{
+        font-size: 14px;
+        padding: 2px 14px;
+        top: 0;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menu_icon {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 2;
+    }
+
+    .tab-bar__tab {
+        padding: 10px;
+    }
+
+    .main-img {
+        max-width: 100%;
+    }
+
+    .top-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main-btn {
+        width: 150px;
+        font-size: 16px;
+        margin: 10px 0 0 0;
+    }
+
+    .card-wrapper {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .box-wrapper {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .bottom-title-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .bottom-title-text-info2 {
+        display: none;
+    }
+
+    #bottom-title-text-info {
+        padding-top: 40px;
+        display: block;
+    }
+
+    #box-num-3 {
+        margin-top: 120px;
+    }
+
+    .top-box-title-text::after {
+        display: none;
+    }
+
+    .skills-section {
+        padding: 10px;
+    }
+
+    .skill {
+        margin: 10px 0;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1em;
+    }
+
+    form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        height: auto;
+        width: 50%;
+        margin: 2rem auto;
+
+    }
+    .email svg , .phone svg {
+        width: 30px;
+        height: 30px;
+    }
+    .phone , .email{
+
+        font-size: 16px;
+    }
+    .info a{
+        font-weight: 500;
+    }
+}
+
+/* Max-width 571px */
+/* Adjustments for very small screens */
+@media (max-width: 571px) {
+    body {
+        font-size: 14px; /* تنظیم فونت کل صفحه برای خوانایی بهتر */
+    }
+
+    .navigation a {
+        font-size: 0.8em; /* کاهش اندازه فونت برای تناسب بهتر */
+        margin-left: 20px; /* کاهش فاصله برای فضای محدود */
+    }
+
+    .history{
+        font-size: 10px;
+        padding: 0 4px;
+        margin: -12px;
+    }
+
+    .main-btn {
+        display: none;
+    }
+
+    .img-text h1 {
+        font-size: 1.8em; /* کاهش سایز عنوان بزرگ */
+    }
+
+    .img-text h2 {
+        font-size: 1.3em; /* کاهش سایز عنوان متوسط */
+    }
+
+    .img-text h3 {
+        margin: 18px auto 0;
+        font-size: 1.7em; /* کاهش سایز عنوان کوچک */
+        width: 80%;
+    }
+
+    .img-text p {
+        font-size: 1.04em;
+        align-items: flex-start;
+        text-align: right;
+        margin-bottom: -25px;
+        line-height: 1.4; /* افزایش line-height برای خوانایی بهتر */
+    }
+
+
+    .card-wrapper {
+        grid-template-columns: 1fr; /* نمایش کارت‌ها به صورت یک ستون */
+        gap: 15px; /* کاهش فاصله بین کارت‌ها */
+    }
+
+    .box-wrapper {
+        grid-template-columns: 1fr; /* نمایش باکس‌ها به صورت یک ستون */
+    }
+
+    form button {
+        font-size: 0.8em; /* کاهش سایز فونت دکمه‌های فرم */
+        padding: 8px; /* افزایش padding برای راحتی کلیک */
+        width: 100%; /* عرض دکمه‌ها به صورت کامل */
+    }
+
+    .contact-info {
+        width: 100%; /* عرض کامل برای نمایش بهتر */
+        padding: 15px; /* افزایش padding برای راحتی */
+        font-size: 0.9em; /* کاهش سایز فونت برای تناسب */
+    }
+
+    .bottom-title-text {
+        font-size: 1.4rem; /* کاهش سایز عنوان */
+    }
+
+    .bottom-title-text-info {
+        font-size: 1.2rem; /* کاهش سایز متن اطلاعات */
+    }
+
+    .top-box-title-text {
+        font-size: 1.6rem; /* کاهش سایز عنوان */
+    }
+
+    .box-wrapper {
+        grid-template-columns: 1fr; /* نمایش باکس‌ها به صورت یک ستون */
+    }
+
+    .skills-section {
+        padding: 15px; /* کاهش padding برای فضای کمتر */
+    }
+
+    .skill-bar {
+        height: 8px; /* کاهش ارتفاع نوار پیشرفت */
+    }
+
+    .percent {
+        font-size: 10px; /* کاهش سایز فونت درصد */
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9em; /* کاهش سایز فونت فیلدها */
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+
+    .email , .phone{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .email svg , .phone svg {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .info a , .info{
+        margin: 5px 0 6px 0;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 0.9em; /* کاهش سایز فونت در فوتر */
+        padding: 8px 0; /* کاهش padding برای فضای کمتر */
+    }
+}
+
+/* Max-width 450px */
+@media (max-width: 450px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 100%;
+        padding: 0; /* حذف padding داخلی */
+        margin: 0; /* حذف margin برای جلوگیری از فضای خالی */
+    }
+
+    main .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        color: #333333;
+    }
+
+    .header-icons{
+        padding: 20px;
+    }
+
+    .box,
+    .card,
+    .bottom-title-text,
+    .img-text,
+    .contact-info,
+    .main-btn,
+    .navigation,
+    .menu_icon {
+        width: 100%; /* تنظیم عرض تمام عناصر به 100% */
+        margin: 0px; /* حذف margin */
+        padding: 10px; /* حذف padding */
+        box-sizing: border-box; /* اطمینان از محاسبه عرض با padding و border */
+    }
+
+    .main-img {
+        width: 100%;
+        height: auto; /* حفظ تناسب تصویر */
+    }
+
+    .card-wrapper,
+    .box-wrapper {
+        grid-template-columns: 1fr; /* نمایش به صورت ستون واحد */
+    }
+
+    .bottom-title-text {
+        font-size: 1rem; /* کاهش اندازه فونت برای فضای محدود */
+        text-align: center; /* تنظیم متن به مرکز */
+    }
+
+    .skills-section,
+    .contact-info {
+        padding: 10px; /* تنظیم padding به نسبت اندازه صفحه */
+    }
+
+    .email svg,
+    .phone svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .info a,
+    .info {
+        font-size: 14px; /* کاهش اندازه فونت برای فضای محدود */
+    }
+
+    footer {
+        font-size: 0.8em; /* کاهش اندازه فونت فوتر */
+    }
+}

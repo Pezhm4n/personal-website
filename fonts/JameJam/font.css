@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'JameJam-UltraLight';
+  src: url('JameJam-UltraLight.eot');
+  src: url('JameJam-UltraLight.woff2') format('woff2'),
+       url('JameJam-UltraLight.woff') format('woff'),
+       url('JameJam-UltraLight.ttf') format('truetype'),
+       url('JameJam-UltraLight.svg#JameJam-UltraLight') format('svg'),
+       url('JameJam-UltraLight.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'JameJam-Bold';
+  src: url('JameJam-Bold.eot');
+  src: url('JameJam-Bold.woff2') format('woff2'),
+       url('JameJam-Bold.woff') format('woff'),
+       url('JameJam-Bold.ttf') format('truetype'),
+       url('JameJam-Bold.svg#JameJam-Bold') format('svg'),
+       url('JameJam-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'JameJam';
+  src: url('JameJam.eot');
+  src: url('JameJam.woff2') format('woff2'),
+       url('JameJam.woff') format('woff'),
+       url('JameJam.ttf') format('truetype'),
+       url('JameJam.svg#JameJam') format('svg'),
+       url('JameJam.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JameJam-Light';
+  src: url('JameJam-Light.eot');
+  src: url('JameJam-Light.woff2') format('woff2'),
+       url('JameJam-Light.woff') format('woff'),
+       url('JameJam-Light.ttf') format('truetype'),
+       url('JameJam-Light.svg#JameJam-Light') format('svg'),
+       url('JameJam-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

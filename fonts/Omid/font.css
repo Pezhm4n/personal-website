@@ -1,0 +1,54 @@
+
+@font-face {
+  font-family: 'Omid';
+  src: url('Omid.eot');
+  src: url('Omid.woff2') format('woff2'),
+       url('Omid.woff') format('woff'),
+       url('Omid.ttf') format('truetype'),
+       url('Omid.svg#Omid') format('svg'),
+       url('Omid.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Omid-Bold';
+  src: url('Omid-Bold.eot');
+  src: url('Omid-Bold.woff2') format('woff2'),
+       url('Omid-Bold.woff') format('woff'),
+       url('Omid-Bold.ttf') format('truetype'),
+       url('Omid-Bold.svg#Omid-Bold') format('svg'),
+       url('Omid-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'Omid-Light';
+  src: url('Omid-Light.eot');
+  src: url('Omid-Light.woff2') format('woff2'),
+       url('Omid-Light.woff') format('woff'),
+       url('Omid-Light.ttf') format('truetype'),
+       url('Omid-Light.svg#Omid-Light') format('svg'),
+       url('Omid-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Omid-UltraLight';
+  src: url('Omid-UltraLight.eot');
+  src: url('Omid-UltraLight.woff2') format('woff2'),
+       url('Omid-UltraLight.woff') format('woff'),
+       url('Omid-UltraLight.ttf') format('truetype'),
+       url('Omid-UltraLight.svg#Omid-UltraLight') format('svg'),
+       url('Omid-UltraLight.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

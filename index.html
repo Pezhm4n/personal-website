@@ -1,104 +1,343 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>خانه - پژمان</title>
-    <link rel="stylesheet" href="images/swiper-bundle.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/blue-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-<header class="container">
-    <h1 style="padding: 5px">پژمان</h1>
-    <nav class="tab-bar">
-        <ul class="tab-bar__tabs">
-            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="index.html" aria-current="page">خانه</a></li>
-            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="achievements.html">دستاوردها</a></li>
-            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="history.html">سوابق</a></li>
-            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="contact.html">ارتباط با من</a></li>
-            <div class="button-container">
-                <button id="theme-toggle" aria-pressed="false">تغییر تم</button>
-            </div>
-        </ul>
-    </nav>
+<header>
+    <div class="container">
+        <div class="header-icons">
+            <button class="icons"><i class="fa fa-telegram"></i></button>
+            <button class="icons"><i class="fa fa-instagram"></i></button>
+            <button class="icons"><i class="fa fa-linkedin-square"></i></button>
+            <button class="icons"><i class="fa fa-github"></i></button>
+        </div>
+        <h1>پژمان</h1>
+    </div>
 </header>
 <main>
-    <section class="hero-section">
-        <div class="container text-center">
-            <h1>به صفحه خوش آمدید</h1>
-            <p>این یک نمونه متن برای صفحه اصلی وب سایت پژمان است.</p>
-        </div>
-    </section>
-    <!-- Swiper -->
-    <section class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="images/slide1.jpg" alt="عکس اول" />
-                <div class="caption">عکس اول</div>
+    <nav class="navigation">
+        <ul class="tab-bar__tabs">
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#home">خانه</a></li>
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#samples">نمونه‌ها</a></li>
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#resume">رزومه</a></li>
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#skills">مهارت‌ها</a></li>
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#contact">ارتباط با من</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="menu_icon">
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" >
+            <svg id="open_icon" width="35" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+
+            <svg id="close_icon" width="35" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+
+        </label>
+        <nav class="nav_menu_sidbar">
+            <ul class="nav_menu__tabs">
+                <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#home">خانه</a></li>
+                <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#samples">نمونه‌ها</a></li>
+                <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#resume">رزومه</a></li>
+                <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#skills">مهارت‌ها</a></li>
+                <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#contact">ارتباط با من</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <section class="hero-section" id="home">
+            <div class="top-main">
+                <h4 class="history">4 سال سابقه</h4>
+                <img src="images/slide1.jpg" alt="picture" class="main-img">
+                <div class="img-text">
+
+                    <h2>به صفحه من خوش آمدید</h2>
+                    <h1>پژمان هستم، برنامه نویس وب</h1>
+                    <h3>
+                        حوزه فرانت اند
+                    </h3>
+                    <p>
+                        یک متن کوتاه درباره من لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                        طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                        شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای
+                        زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان.
+                    </p>
+                    <button type="button" class="main-btn">
+
+                        برو پایین
+                        <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                             fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                  d="M15 3.75A5.25 5.25 0 0 0 9.75 9v10.19l4.72-4.72a.75.75 0 1 1 1.06 1.06l-6 6a.75.75 0 0 1-1.06 0l-6-6a.75.75 0 1 1 1.06-1.06l4.72 4.72V9a6.75 6.75 0 0 1 13.5 0v3a.75.75 0 0 1-1.5 0V9c0-2.9-2.35-5.25-5.25-5.25Z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="images/slide2.jpg" alt="عکس دوم" />
-                <div class="caption">عکس دوم</div>
+        </section>
+
+        <section id="samples">
+            <div class="top-cards-title">
+                <h2 class="top-cards-title-text">نمونه کارهای انجام شده</h2>
+                <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h2>
+                </p>
             </div>
-            <div class="swiper-slide">
-                <img src="images/slide3.jpg" alt="عکس سوم" />
-                <div class="caption">عکس سوم</div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="product-image.jpg" alt="product">
+                    <h3>پروژه سایت (1)</h3>
+                    <button>مشاهده</button>
+                </div>
+                <div class="card">
+                    <img src="product-image.jpg" alt="product">
+                    <h3>پروژه سایت (2)</h3>
+                    <button>مشاهده</button>
+                </div>
+                <div class="card">
+                    <img src="product-image.jpg" alt="product">
+                    <h3>پروژه سایت (3)</h3>
+                    <button>مشاهده</button>
+                </div>
+                <div class="card">
+                    <img src="product-image.jpg" alt="product">
+                    <h3>پروژه سایت (4)</h3>
+                    <button>مشاهده</button>
+                </div>
+                <div class="card">
+                    <img src="product-image.jpg" alt="product">
+                    <h3>پروژه سایت (5)</h3>
+                    <button>مشاهده</button>
+                </div>
+                <div class="card">
+                    <img src="product-image.jpg" alt="product">
+                    <h3>پروژه سایت (6)</h3>
+                    <button>مشاهده</button>
+                </div>
             </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </section>
+        </section>
+
+        <section id="resume">
+
+            <div class="top-cards-title">
+                <h2 class="top-box-title-text" style="margin-bottom: 2rem">رزومه</h2>
+                <div class="bottom-title-text">
+                    <div class="bottom-title-text-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="size-6 contact-svg">
+                            <path fill-rule="evenodd"
+                                  d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                                  clip-rule="evenodd"/>
+                            <path d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z"/>
+                        </svg>
+                        <h2 class="top-cards-title-text" style="color:#007AFF;">سوابق شغلی</h2>
+                    </div>
+
+                    <div class="bottom-title-text-info2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="size-6 contact-svg">
+                            <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"/>
+                            <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"/>
+                            <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"/>
+                        </svg>
+                        <h2 class="top-cards-title-text" style="color:#007AFF;">تحصیلات</h2>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="box-wrapper">
+                <div class="box">
+                    <h4>1396 - تاکنون</h4>
+                    <h3>استدیو گرافیک ترنج</h3>
+                    <p>
+                        توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
+                        نسبت
+                        شما و مهارت تان را برساند. به سادگی و با دوباره کلیک روی این بخش، متن مورد نظر خودتان را
+                        قرار
+                        دهید.
+                    </p>
+                </div>
+                <div class="box">
+                    <h4>1396 - تاکنون</h4>
+                    <h3>استدیو گرافیک ترنج</h3>
+                    <p>
+                        توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
+                        نسبت
+                        شما و مهارت تان را برساند. به سادگی و با دوباره کلیک روی این بخش، متن مورد نظر خودتان را
+                        قرار
+                        دهید.
+                    </p>
+                </div>
+                <div class="box">
+                    <h4>1396 - تاکنون</h4>
+                    <h3>استدیو گرافیک ترنج</h3>
+                    <p>
+                        توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
+                        نسبت
+                        شما و مهارت تان را برساند. به سادگی و با دوباره کلیک روی این بخش، متن مورد نظر خودتان را
+                        قرار
+                        دهید.
+                    </p>
+                </div>
+                <div class="bottom-title-text-info" id="bottom-title-text-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-6 contact-svg">
+                        <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"/>
+                        <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"/>
+                        <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"/>
+                    </svg>
+                    <h2 class="top-cards-title-text" style="color:#007AFF;">تحصیلات</h2>
+                </div>
+                <div class="box">
+                    <h4>1396 - تاکنون</h4>
+                    <h3>استدیو گرافیک ترنج</h3>
+                    <p>
+                        توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
+                        نسبت
+                        شما و مهارت تان را برساند. به سادگی و با دوباره کلیک روی این بخش، متن مورد نظر خودتان را
+                        قرار
+                        دهید.
+                    </p>
+                </div>
+                <div class="box">
+                    <h4>1396 - تاکنون</h4>
+                    <h3>استدیو گرافیک ترنج</h3>
+                    <p>
+                        توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
+                        نسبت
+                        شما و مهارت تان را برساند. به سادگی و با دوباره کلیک روی این بخش، متن مورد نظر خودتان را
+                        قرار
+                        دهید.
+                    </p>
+                </div>
+                <div class="box">
+                    <h4>1396 - تاکنون</h4>
+                    <h3>استدیو گرافیک ترنج</h3>
+                    <p>
+                        توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
+                        نسبت
+                        شما و مهارت تان را برساند. به سادگی و با دوباره کلیک روی این بخش، متن مورد نظر خودتان را
+                        قرار
+                        دهید.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="top-cards-title">
+                <h2 class="top-cards-title-text" >مهارت ها</h2>
+                <div class="skills-section container">
+                    <div class="skill">
+                        <p>HTML</p>
+                        <div class="skill-bar">
+                            <div class="progress html"></div>
+                            <div class="percent html">0%</div>
+                        </div>
+                        <p>CSS</p>
+                        <div class="skill-bar">
+                            <div class="progress css"></div>
+                            <div class="percent css">0%</div>
+                        </div>
+                        <p>JavaScript</p>
+                        <div class="skill-bar">
+                            <div class="progress js"></div>
+                            <div class="percent js">0%</div>
+                        </div>
+                        <p>JAVA</p>
+                        <div class="skill-bar">
+                            <div class="progress java"></div>
+                            <div class="percent java">0%</div>
+                        </div>
+                        <p>C</p>
+                        <div class="skill-bar">
+                            <div class="progress c"></div>
+                            <div class="percent c">0%</div>
+                        </div>
+                        <p>Graphic</p>
+                        <div class="skill-bar">
+                            <div class="progress graphic"></div>
+                            <div class="percent graphic">0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="container">
+        <section id="contact">
+            <h2 class="contact-title">ارسال مستقیم به ایمیل:</h2>
+            <form>
+                <label for="first-name">نام</label>
+                <input type="text" id="first-name" name="first-name" placeholder="نام خود را وارد کنید">
+
+                <label for="last-name">نام خانوادگی</label>
+                <input type="text" id="last-name" name="last-name" placeholder="نام خانوادگی خود را وارد کنید">
+
+                <label for="phone">شماره تلفن</label>
+                <input type="text" id="phone" name="phone" placeholder="09123456789">
+
+                <label for="email">ایمیل</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+
+                <label for="message">متن پیام</label>
+                <textarea id="message" name="message" placeholder="پیام خود را وارد کنید"></textarea>
+
+                <div class="button-container">
+                    <button type="reset" class="reset-button">پاک کردن</button>
+                    <button type="submit">ارسال</button>
+                </div>
+            </form>
+
+            <div class="contact-info">
+                <h2>ارتباط با من</h2>
+                <!--            <p>برای اطلاعات بیشتر و تماس با من، از طریق اطلاعات زیر اقدام کنید:</p>-->
+                <div class="email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-6 contact-svg">
+                        <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/>
+                        <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/>
+                    </svg>
+                    <p class="info"><a href="mailto:info@pejman.com">info@gmail.com</a></p>
+                </div>
+                <div class="phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-6 contact-svg">
+                        <path fill-rule="evenodd"
+                              d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <p class="info">09122222222</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
 </main>
+
+<script src="script.js"></script>
+
 <footer>
-    <div class="container text-center">
+    <div class="container">
         <p>&copy; 2024 پژمان. تمامی حقوق محفوظ است.</p>
     </div>
 </footer>
 
-<script src="images/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
-        speed: 1500,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        slidesPerView: 1, // نمایش یک تصویر در هر بار
-        spaceBetween: 10, // فاصله بین تصاویر
-        centeredSlides: true, // نمایش تصویر فعال در مرکز
-    });
-
-    // Theme Toggle
-    const themeToggle = document.getElementById('theme-toggle');
-
-    function setTheme(theme) {
-        document.body.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-        themeToggle.setAttribute('aria-pressed', theme === 'dark');
-    }
-
-    themeToggle.addEventListener('click', function() {
-        const currentTheme = document.body.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-    });
-
-    // Set theme on load
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
-</script>
 </body>
 </html>
