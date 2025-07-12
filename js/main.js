@@ -12,21 +12,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
-    }, {threshold: 0.5}); // تغییر این مقدار به نیاز خود
+    }, {threshold: 0.5});
 
-    // مشاهده هر بخش
+
     sections.forEach(section => {
         observer.observe(section);
     });
 
-    // اسکرول به بخش
     const scrollButton = document.querySelector('.main-btn');
     scrollButton.addEventListener('click', function () {
-        const contactSection = document.getElementById('samples');
-        contactSection.scrollIntoView({behavior: 'smooth'});
+        const portfolioSection = document.getElementById('portfolio');
+        portfolioSection.scrollIntoView({behavior: 'smooth'});
     });
 
-    // تنظیم اولیه نوارها و درصدها به صفر
+
     function resetSkills() {
         document.querySelectorAll('.progress').forEach(progressBar => {
             progressBar.style.width = '0%';
@@ -36,10 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // انتخاب عنصر skills-section
+
     const skillsSection = document.querySelector('.skills-section');
 
-    // تعریف یک observer با callback که انیمیشن‌ها را فعال می‌کند
+
     const skillsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -47,44 +46,42 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelectorAll('.progress').forEach(progressBar => {
                     progressBar.classList.add('animate');
                 });
-                // اعمال انیمیشن‌ها به هر مهارت
                 Object.keys(skills).forEach(skill => {
-                    animateSkillBar(skill, skills[skill]);
+                    animateSkillBar(skill,skills[skill]);
                 });
-                // توقف نظارت پس از اجرا شدن انیمیشن‌ها
                 skillsObserver.unobserve(entry.target);
             }
         });
-    }, {threshold: 0.5}); // فعال شدن observer زمانی که 50% از بخش قابل مشاهده است
+    }, {threshold: 0.5});
 
-    // شروع به نظارت بر بخش مهارت‌ها
     skillsObserver.observe(skillsSection);
 
     const skills = {
-        html: 90,
+        html: 80,
         css: 70,
-        js: 20,
-        java: 70,
-        c: 80,
-        graphic: 60
+        js: 30,
+        java: 60,
+        c: 70,
+        python: 50,
+        machineLearning : 60,
+        git: 70
     };
 
-    // تابعی برای انیمیشن نوار مهارت‌ها
+    //  انیمیشن نوارها
     function animateSkillBar(skill, percent) {
         const progress = document.querySelector(`.progress.${skill}`);
         const percentElement = document.querySelector(`.percent.${skill}`);
         let width = 0;
         const interval = setInterval(() => {
-            if (width >= percent) {
+            if (width >= percent){
                 clearInterval(interval);
-            } else {
+            } else{
                 width++;
                 progress.style.width = `${width}%`;
                 percentElement.textContent = `${width}%`;
             }
-        }, 20); // تنظیم مدت زمان با تغییر این مقدار
+        }, 20);
     }
 
-    // تنظیم اولیه نوارها و درصدها به صفر
     resetSkills();
 });

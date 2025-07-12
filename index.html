@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>خانه - پژمان</title>
-    <link rel="stylesheet" href="css/blue-styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="description" content="پژمان سرمدی | توسعه‌دهنده نرم‌افزار و علاقه‌مند به هوش مصنوعی. نمونه کارها، رزومه، مهارت‌ها و راه‌های ارتباطی.">
 </head>
 <body>
 <header>
     <div class="container">
         <div class="header-icons">
-            <button class="icons"><i class="fa fa-telegram"></i></button>
-            <button class="icons"><i class="fa fa-instagram"></i></button>
-            <button class="icons"><i class="fa fa-linkedin-square"></i></button>
-            <button class="icons"><i class="fa fa-github"></i></button>
+            <a class="icons" href="https://t.me/Sarmadi_P" aria-label="تلگرام"><i class="fa fa-telegram"></i></a>
+            <a class="icons" href="https://instagram.com/#" aria-label="اینستاگرام"><i class="fa fa-instagram"></i></a>
+            <a class="icons" href="https://www.linkedin.com/in/pezhman-sarmadi" aria-label="لینکدین"><i class="fa fa-linkedin-square"></i></a>
+            <a class="icons" href="https://github.com/Pezhm4n" aria-label="گیت‌هاب"><i class="fa fa-github"></i></a>
         </div>
-        <h1>پژمان</h1>
+        <h1>پژمان سرمدی</h1>
+        <p class="subtitle">توسعه‌دهنده نرم‌افزار و علاقه‌مند به حوزه هوش مصنوعی</p>
     </div>
 </header>
 <main>
-    <nav class="navigation">
+    <nav class="navigation" aria-label="ناوبری اصلی">
         <ul class="tab-bar__tabs">
             <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#home">خانه</a></li>
-            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#samples">نمونه‌ها</a></li>
+            <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#portfolio">نمونه‌کارها</a></li>
             <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#resume">رزومه</a></li>
             <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#skills">مهارت‌ها</a></li>
             <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#contact">ارتباط با من</a></li>
         </ul>
     </nav>
-
     <!-- Hamburger Menu Icon -->
     <div class="menu_icon">
         <input type="checkbox" id="nav-toggle" hidden>
-        <label for="nav-toggle" >
+        <label for="nav-toggle">
             <svg id="open_icon" width="35" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                 <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
             </svg>
@@ -44,10 +45,10 @@
             </svg>
 
         </label>
-        <nav class="nav_menu_sidbar">
+        <nav class="nav_menu_sidbar" aria-label="منوی موبایل">
             <ul class="nav_menu__tabs">
                 <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#home">خانه</a></li>
-                <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#samples">نمونه‌ها</a></li>
+                <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#portfolio">نمونه‌کارها</a></li>
                 <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#resume">رزومه</a></li>
                 <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#skills">مهارت‌ها</a></li>
                 <li class="tab-bar__tab"><a class="tab-bar__tab-link" href="#contact">ارتباط با من</a></li>
@@ -57,72 +58,51 @@
     <div class="container">
         <section class="hero-section" id="home">
             <div class="top-main">
-                <h4 class="history">4 سال سابقه</h4>
-                <img src="images/slide1.jpg" alt="picture" class="main-img">
+                <h2 class="history">n سال سابقه</h2>
+                <img src="images/slide1.jpg" alt="پژمان سرمدی - توسعه‌دهنده نرم‌افزار" class="main-img">
                 <div class="img-text">
-
-                    <h2>به صفحه من خوش آمدید</h2>
-                    <h1>پژمان هستم، برنامه نویس وب</h1>
-                    <h3>
-                        حوزه فرانت اند
-                    </h3>
+                    <h2>به وب‌سایت شخصی من خوش آمدید</h2>
+                    <h3>مهندس نرم‌افزار | علاقه‌مند به هوش مصنوعی</h3>
                     <p>
-                        یک متن کوتاه درباره من لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                        طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-                        شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای
-                        زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان.
+                        کارشناس مهندسی کامپیوتر با تجربه در توسعه نرم‌افزارهای مبتنی بر Unity، Java، C، JavaScript و Front-end. فعال در پروژه‌های یادگیری ماشین و یادگیری عمیق، در حال یادگیری Computer Vision و علاقه‌مند به حوزه‌های LLM و NLP.
                     </p>
-                    <button type="button" class="main-btn">
-
-                        برو پایین
-                        <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                             fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd"
-                                  d="M15 3.75A5.25 5.25 0 0 0 9.75 9v10.19l4.72-4.72a.75.75 0 1 1 1.06 1.06l-6 6a.75.75 0 0 1-1.06 0l-6-6a.75.75 0 1 1 1.06-1.06l4.72 4.72V9a6.75 6.75 0 0 1 13.5 0v3a.75.75 0 0 1-1.5 0V9c0-2.9-2.35-5.25-5.25-5.25Z"
-                                  clip-rule="evenodd"/>
+                    <button type="button" class="main-btn">برو به نمونه‌کارها
+                        <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd" d="M15 3.75A5.25 5.25 0 0 0 9.75 9v10.19l4.72-4.72a.75.75 0 1 1 1.06 1.06l-6 6a.75.75 0 0 1-1.06 0l-6-6a.75.75 0 1 1 1.06-1.06l4.72 4.72V9a6.75 6.75 0 0 1 13.5 0v3a.75.75 0 0 1-1.5 0V9c0-2.9-2.35-5.25-5.25-5.25Z" clip-rule="evenodd"/>
                         </svg>
                     </button>
                 </div>
             </div>
         </section>
-
-        <section id="samples">
+        <section id="portfolio">
             <div class="top-cards-title">
-                <h2 class="top-cards-title-text">نمونه کارهای انجام شده</h2>
-                <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h2>
-                </p>
+                <h2 class="top-cards-title-text">نمونه‌کارها</h2>
+                <p>برخی از پروژه‌های شاخص من در حوزه توسعه نرم‌افزار و هوش مصنوعی:</p>
             </div>
-
             <div class="card-wrapper">
                 <div class="card">
-                    <img src="product-image.jpg" alt="product">
-                    <h3>پروژه سایت (1)</h3>
+                    <img src="images/product-image.jpg" alt="پروژه سایت شخصی" loading="lazy">
+                    <h3>پروژه سایت شخصی</h3>
                     <button>مشاهده</button>
                 </div>
                 <div class="card">
-                    <img src="product-image.jpg" alt="product">
-                    <h3>پروژه سایت (2)</h3>
+                    <img src="images/product-image.jpg" alt="پروژه تشخیص چهره" loading="lazy">
+                    <h3>پروژه تشخیص چهره</h3>
                     <button>مشاهده</button>
                 </div>
                 <div class="card">
-                    <img src="product-image.jpg" alt="product">
-                    <h3>پروژه سایت (3)</h3>
+                    <img src="images/product-image.jpg" alt="پروژه پیش‌بینی قیمت" loading="lazy">
+                    <h3>پروژه پیش‌بینی قیمت</h3>
                     <button>مشاهده</button>
                 </div>
                 <div class="card">
-                    <img src="product-image.jpg" alt="product">
-                    <h3>پروژه سایت (4)</h3>
+                    <img src="images/product-image.jpg" alt="پروژه مدیریت املاک" loading="lazy">
+                    <h3>پروژه مدیریت املاک</h3>
                     <button>مشاهده</button>
                 </div>
                 <div class="card">
-                    <img src="product-image.jpg" alt="product">
-                    <h3>پروژه سایت (5)</h3>
-                    <button>مشاهده</button>
-                </div>
-                <div class="card">
-                    <img src="product-image.jpg" alt="product">
-                    <h3>پروژه سایت (6)</h3>
+                    <img src="images/product-image.jpg" alt="پروژه استخراج متن" loading="lazy">
+                    <h3>پروژه استخراج متن</h3>
                     <button>مشاهده</button>
                 </div>
             </div>
@@ -159,8 +139,13 @@
 
             <div class="box-wrapper">
                 <div class="box">
-                    <h4>1396 - تاکنون</h4>
+                    <h4>1396 - 1396</h4>
                     <h3>استدیو گرافیک ترنج</h3>
+                    <p>توسعه‌دهنده ارشد نرم‌افزار، مدیریت پروژه‌های گرافیکی و وب</p>
+                </div>
+                <div class="box">
+                    <h4>1398 - 1399</h4>
+                    <h3>دوره Y</h3>
                     <p>
                         توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
                         نسبت
@@ -170,19 +155,8 @@
                     </p>
                 </div>
                 <div class="box">
-                    <h4>1396 - تاکنون</h4>
-                    <h3>استدیو گرافیک ترنج</h3>
-                    <p>
-                        توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
-                        نسبت
-                        شما و مهارت تان را برساند. به سادگی و با دوباره کلیک روی این بخش، متن مورد نظر خودتان را
-                        قرار
-                        دهید.
-                    </p>
-                </div>
-                <div class="box">
-                    <h4>1396 - تاکنون</h4>
-                    <h3>استدیو گرافیک ترنج</h3>
+                    <h4>1396 - 1397</h4>
+                    <h3>استدیو W</h3>
                     <p>
                         توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
                         نسبت
@@ -201,8 +175,8 @@
                     <h2 class="top-cards-title-text" style="color:#007AFF;">تحصیلات</h2>
                 </div>
                 <div class="box">
-                    <h4>1396 - تاکنون</h4>
-                    <h3>استدیو گرافیک ترنج</h3>
+                    <h4>1397 - 1398</h4>
+                    <h3>آموزشگاه A</h3>
                     <p>
                         توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
                         نسبت
@@ -212,19 +186,13 @@
                     </p>
                 </div>
                 <div class="box">
-                    <h4>1396 - تاکنون</h4>
-                    <h3>استدیو گرافیک ترنج</h3>
-                    <p>
-                        توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
-                        نسبت
-                        شما و مهارت تان را برساند. به سادگی و با دوباره کلیک روی این بخش، متن مورد نظر خودتان را
-                        قرار
-                        دهید.
-                    </p>
+                    <h4>۱۳۹۴ - ۱۳۹۶</h4>
+                    <h3>شرکت X</h3>
+                    <p>برنامه‌نویس جاوا و توسعه‌دهنده سیستم‌های سازمانی</p>
                 </div>
                 <div class="box">
-                    <h4>1396 - تاکنون</h4>
-                    <h3>استدیو گرافیک ترنج</h3>
+                    <h4>1399 - تاکنون</h4>
+                    <h3>دانشگاه Z</h3>
                     <p>
                         توضیحاتی درباره شرایط کار در استدیو گرافیک ترنج، تعداد پروژه ها، نحوه کار و ... که اطلاعاتی
                         نسبت
@@ -233,80 +201,53 @@
                         دهید.
                     </p>
                 </div>
-
             </div>
         </section>
-
         <section id="skills">
             <div class="top-cards-title">
-                <h2 class="top-cards-title-text" >مهارت ها</h2>
+                <h2 class="top-cards-title-text">مهارت‌ها</h2>
                 <div class="skills-section container">
                     <div class="skill">
-                        <p>HTML</p>
-                        <div class="skill-bar">
-                            <div class="progress html"></div>
-                            <div class="percent html">0%</div>
-                        </div>
-                        <p>CSS</p>
-                        <div class="skill-bar">
-                            <div class="progress css"></div>
-                            <div class="percent css">0%</div>
-                        </div>
+                        <p>HTML5</p>
+                        <div class="skill-bar"><div class="progress html"></div><div class="percent html">0%</div></div>
+                        <p>CSS3</p>
+                        <div class="skill-bar"><div class="progress css"></div><div class="percent css">0%</div></div>
                         <p>JavaScript</p>
-                        <div class="skill-bar">
-                            <div class="progress js"></div>
-                            <div class="percent js">0%</div>
-                        </div>
-                        <p>JAVA</p>
-                        <div class="skill-bar">
-                            <div class="progress java"></div>
-                            <div class="percent java">0%</div>
-                        </div>
+                        <div class="skill-bar"><div class="progress js"></div><div class="percent js">0%</div></div>
+                        <p>Java</p>
+                        <div class="skill-bar"><div class="progress java"></div><div class="percent java">0%</div></div>
                         <p>C</p>
-                        <div class="skill-bar">
-                            <div class="progress c"></div>
-                            <div class="percent c">0%</div>
-                        </div>
-                        <p>Graphic</p>
-                        <div class="skill-bar">
-                            <div class="progress graphic"></div>
-                            <div class="percent graphic">0%</div>
-                        </div>
+                        <div class="skill-bar"><div class="progress c"></div><div class="percent c">0%</div></div>
+                        <p>Python</p>
+                        <div class="skill-bar"><div class="progress python"></div><div class="percent python">0%</div></div>
+                        <p>Machine Learning & Deep Learning</p>
+                        <div class="skill-bar"><div class="progress machineLearning"></div><div class="percent machineLearning">0%</div></div>
+                        <p>Git</p>
+                        <div class="skill-bar"><div class="progress git"></div><div class="percent git">0%</div></div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-
-
-    <div class="container">
         <section id="contact">
-            <h2 class="contact-title">ارسال مستقیم به ایمیل:</h2>
+            <h2 class="contact-title">ارتباط با من</h2>
             <form>
                 <label for="first-name">نام</label>
                 <input type="text" id="first-name" name="first-name" placeholder="نام خود را وارد کنید">
-
                 <label for="last-name">نام خانوادگی</label>
                 <input type="text" id="last-name" name="last-name" placeholder="نام خانوادگی خود را وارد کنید">
-
                 <label for="phone">شماره تلفن</label>
                 <input type="text" id="phone" name="phone" placeholder="09123456789">
-
                 <label for="email">ایمیل</label>
                 <input type="email" id="email" name="email" placeholder="example@gmail.com">
-
                 <label for="message">متن پیام</label>
                 <textarea id="message" name="message" placeholder="پیام خود را وارد کنید"></textarea>
-
                 <div class="button-container">
                     <button type="reset" class="reset-button">پاک کردن</button>
                     <button type="submit">ارسال</button>
                 </div>
             </form>
-
             <div class="contact-info">
-                <h2>ارتباط با من</h2>
-                <!--            <p>برای اطلاعات بیشتر و تماس با من، از طریق اطلاعات زیر اقدام کنید:</p>-->
+                <h3>اطلاعات تماس</h3>
                 <div class="email">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                          class="size-6 contact-svg">
@@ -322,22 +263,17 @@
                               d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
                               clip-rule="evenodd"/>
                     </svg>
-                    <p class="info">09122222222</p>
+                    <p class="info">۰۹۱۲۲۲۲۲۲۲۲</p>
                 </div>
             </div>
         </section>
     </div>
-
-
 </main>
-
-<script src="script.js"></script>
-
 <footer>
     <div class="container">
-        <p>&copy; 2024 پژمان. تمامی حقوق محفوظ است.</p>
+        <p>&copy; 2024 پژمان سرمدی. تمامی حقوق محفوظ است.</p>
     </div>
 </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>
