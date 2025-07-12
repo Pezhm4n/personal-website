@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:007AFF,100:00C6FB&height=180&section=header&text=Personal%20Website%20 Project&fontColor=ffffff&fontAlignY=40&desc=Pezhm4n&descAlignY=60" alt="banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:007AFF,100:00C6FB&height=180&section=header&text=Personal%20Website%20Project&fontColor=ffffff&fontAlignY=40&desc=Pezhm4n&descAlignY=60" alt="banner"/>
 </p>
 
 <h2 align="center">پروژه وب‌سایت شخصی</h2>
@@ -55,9 +55,11 @@ personal-website/
   <img src="images/preview.png" alt="preview" width="90%" style="border-radius: 8px;"/>
 </p>
 
-### نمونه لینک دمو :
-> <a href="   https://pezhm4n.github.io/personal-website">مشاهده آنلاین</a>
-
+<p align="center">
+  <a href="https://pezhm4n.github.io/personal-website">
+    <img src="https://img.shields.io/badge/Live Demo-007AFF?style=for-the-badge&logo=google-chrome&logoColor=fff"/>
+  </a>
+</p>
 ---
 
 ##  راهنمای اجرا
